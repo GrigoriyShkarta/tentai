@@ -1,0 +1,12 @@
+@import "../../shared/scss/vars";
+
+.container {
+  @include container;
+  background-image: url("../../shared/images/form/background.png");
+  background-repeat: no-repeat;
+  height: 580px;
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 110px 0 35px;
+}

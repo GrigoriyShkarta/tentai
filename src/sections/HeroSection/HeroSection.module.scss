@@ -1,0 +1,67 @@
+@import "../../shared/scss/vars";
+
+.wrapper {
+  height: 475px;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  @include container;
+  display: flex;
+  padding-top: 20px;
+  height: 100%;
+}
+
+.link {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  cursor: pointer;
+  z-index: 20;
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__text {
+    color: $textGray;
+    font-weight: 500;
+    font-size: 14px;
+    margin-left: 10px;
+    white-space: nowrap;
+  }
+}
+
+.ellipse {
+  position: absolute;
+  z-index: 0;
+
+  &_one {
+    width: 274.5px;
+    height: 301.14px;
+    top: 40px;
+    left: 0;
+    gap: 0px;
+    border: 1px;
+  }
+
+  &_two {
+    width: 274.5px;
+    height: 301.14px;
+    top: 312px;
+    left: 184px;
+    gap: 0px;
+    border: 1px;
+  }
+
+  &_three {
+    width: 318px;
+    height: 399px;
+    top: -51px;
+    left: 1512.45px;
+    gap: 0px;
+    border: 1px;
+  }
+}

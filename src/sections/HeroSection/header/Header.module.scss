@@ -1,0 +1,68 @@
+@import "../../../shared/scss/vars";
+
+.header {
+  position: relative;
+  height: 68px;
+  padding: 16px 0;
+  gap: 10px;
+  border-radius: 0 0 26px 26px;
+  box-shadow: 0 4px 15px 0 $shadow;
+  z-index: 10;
+  background-color: white;
+}
+
+.container {
+  @include container;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigate {
+  display: flex;
+  justify-content: space-between;
+  width: 642px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 540px;
+
+    &_item {
+      font-size: 14px;
+      color: $textGray;
+      cursor: pointer;
+    }
+  }
+
+  .price {
+    display: flex;
+    align-items: center;
+
+    &__item {
+      color: $textOrange;
+    }
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+}
+
+.languagePanel {
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+  }
+
+  &__text {
+    color: $textPink;
+    cursor: pointer;
+  }
+}

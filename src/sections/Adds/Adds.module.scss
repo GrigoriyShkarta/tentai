@@ -1,0 +1,31 @@
+@import "../../shared/scss/vars";
+
+.container {
+  @include container;
+  background: $gradient;
+  height: 210px;
+  border-radius: 25px;
+  padding: 36px;
+  margin-top: 108px;
+  position: relative;
+}
+
+.text {
+  font-size: 24px;
+  color: white;
+  width: 540px;
+  line-height: 31px;
+}
+
+.stores {
+  width: 385px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.phones {
+  position: absolute;
+  right: 0;
+  top: -75px;
+}

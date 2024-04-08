@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { lazy } from 'react';
 import './App.css';
 
+const HeroSection = lazy(() => import('./sections/HeroSection'));
+const MissionValues = lazy(() => import('./sections/MissionValues'));
+const TeamList = lazy(() => import('./sections/TeamList'));
+const Adds = lazy(() => import('./sections/Adds'));
+const FormSection = lazy(() => import('./sections/FormSection'));
+const Footer = lazy(() => import('./sections/Footer'));
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="wrapper">
+			<HeroSection />
+			<MissionValues />
+			<TeamList />
+			<Adds />
+			<FormSection />
+			<Footer />
+		</div>
+	);
 }
 
 export default App;

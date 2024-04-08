@@ -1,0 +1,115 @@
+@import "../../shared/scss/vars";
+
+.container {
+  @include container;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 7.1%, #FFFFFF 68.2%);
+}
+
+.title {
+  text-align: center;
+  @include textGradient;
+}
+
+.cardsWrapperBG {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 7.1%, #FFFFFF 68.2%);
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 480px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 7.1%, #FFFFFF 68.2%);
+  }
+}
+
+.cardsWrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 7.1%, #FFFFFF 68.2%);
+  position: relative;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.card {
+  width: 315px;
+  height: 430px;
+  cursor: pointer;
+  transition: transform 0.5s;
+  margin-bottom: 16px;
+
+  &__img {
+    border-radius: 20px;
+    width: 100%;
+    height: 370px;
+    transition: transform 0.5s;
+  }
+
+  &__description {
+    padding: 16px 16px 0;
+    height: 370px;
+    box-shadow: 0 4px 41.6px 0 $shadow;
+    border-radius: 21px;
+    transition: transform 0.5s;
+  }
+
+  &__pinkText {
+    font-weight: 500;
+    line-height: 21px;
+    color: $textPink;
+  }
+
+  &__bottomInfo {
+    display: flex;
+    flex-direction: column;
+    height: 43px;
+    justify-content: space-between;
+    margin-top: 16px;
+    text-align: center;
+  }
+
+  &__fullName {
+    font-weight: 500;
+    @include textGradient;
+  }
+
+  &__text {
+    font-size: 14px;
+    color: $textGray;
+    line-height: 21px;
+  }
+}
+
+.button {
+  position: relative;
+  display: block;
+  background: none;
+  width: 175px;
+  height: 40px;
+  border-width: 2px;
+  border-radius: 8px;
+  border-image: $gradient 1;
+  border-style: solid;
+  margin: 0 auto;
+  overflow: hidden;
+  cursor: pointer;
+  @include textGradient;
+}
+
+
+.cardTurning {
+  transform: rotateY(90deg);
+}
+
+//.cardClose {
+//  transform: rotateY(0deg);
+//}

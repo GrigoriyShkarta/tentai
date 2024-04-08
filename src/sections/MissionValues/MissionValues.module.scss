@@ -1,0 +1,22 @@
+@import "../../shared/scss/vars";
+
+.container {
+  padding: 50px 0;
+}
+
+.content {
+  @include container;
+}
+
+.title {
+  text-align: center;
+  @include textGradient;
+}
+
+.missionsWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  position: relative;
+  margin-top: 64px;
+}

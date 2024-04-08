@@ -1,0 +1,85 @@
+@import "../../shared/scss/vars";
+
+.footer {
+  height: 320px;
+  background: $footerBG;
+  margin-top: 40px;
+}
+
+.container {
+  @include container;
+  padding: 40px 60px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  width: 285px;
+
+  &__socialMedia {
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+    margin-top: 40px;
+
+    &_icon {
+      width: 42px;
+      height: 42px;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+  }
+
+  &__list {
+    padding: 16px 0 !important;
+
+    &_item {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    &_img {
+      margin-right: 20px;
+    }
+  }
+}
+
+.apple {
+  width: 42px;
+  height: 42px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.gradient {
+  @include textGradient;
+}
+
+.button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+
+  &__copiryght {
+    font-size: 10px;
+  }
+
+  &__socialMedia {
+    width: 225px;
+    display: flex;
+    justify-content: space-between;
+
+    &_img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
